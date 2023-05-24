@@ -1,0 +1,151 @@
+.app__card,
+.app__card-profile {
+  position: relative;
+  max-width: 400px;
+  height: 271px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background: #363636;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  gap: 16px;
+  cursor: pointer;
+  transition: all ease 200ms;
+}
+
+.app__card:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.app__card span,
+.app__card-profile span {
+  max-width: 352px;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.app__card-category-logo {
+  padding: 4px;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app__card-category-logo img {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+}
+.app__card-category {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  gap: 16px;
+}
+.app__card-category p {
+  font-family: var(--font-sans);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+.app__card-user {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  gap: 8px;
+}
+.app__card-user p {
+  font-family: var(--font-sans);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.app__card-info {
+  height: 48px;
+  align-items: center;
+  display: flex;
+}
+.app__card-info p {
+  font-family: var(--font-sans);
+  white-space: pre-line;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  word-break: break-all;
+}
+
+.app__card-difficulty {
+  display: flex;
+  gap: 8px;
+}
+.app__card-difficulty span {
+  width: 1px;
+  height: 19px;
+  background-color: #ffffff;
+}
+.app__card-difficulty p {
+  font-family: var(--font-sans);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.app__card-rating {
+  display: flex;
+  gap: 8px;
+}
+.app__card-rating span {
+  width: 1px;
+  height: 19px;
+  background: #ffffff;
+}
+.app__card-rating p {
+  font-family: var(--font-sans);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.category-cs:hover {
+  border: 1px solid #8a30e5;
+}
+
+.category-ui:hover {
+  border: 1px solid #30a4e5;
+}
+
+.category-be:hover {
+  border: 1px solid #e5a730;
+}
+
+.category-android:hover {
+  border: 1px solid #e53030;
+}
+
+.category-devops:hover {
+  border: 1px solid #e130e5;
+}
+
+.category-ds:hover {
+  border: 1px solid #30b71a;
+}
+
+.category-fe:hover {
+  border: 1px solid #304de5;
+}

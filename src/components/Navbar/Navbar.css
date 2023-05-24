@@ -1,0 +1,178 @@
+.app__navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  transition: 0.5s ease;
+  position: absolute;
+  z-index: 10;
+  padding: 0 15px;
+}
+
+.app__navbar-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 920px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.app__navbar-logo {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.app__navbar-links {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+}
+
+.app__navbar-links_item {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: relative;
+}
+
+.app__navbar-links_item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #15be8b;
+  transition: width 0.2s ease-in-out;
+}
+
+.app__navbar-links_item:hover::before {
+  width: 100%;
+}
+
+.app__navbar-links_item.active::before {
+  width: 100%;
+}
+
+.app__navbar-smallscreen {
+  display: none;
+}
+
+.app__navbar-smallscreen svg {
+  cursor: pointer;
+  
+  z-index: 101;
+}
+
+.signin-button {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background: linear-gradient(
+      251.95deg,
+      rgba(156, 21, 190, 0.2) -0.37%,
+      rgba(0, 0, 0, 0) 139.41%
+    ),
+    linear-gradient(
+      61.69deg,
+      rgba(21, 190, 139, 0.2) 14.18%,
+      rgba(0, 0, 0, 0) 105.62%
+    ),
+    #1d1d1d;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.3);
+  border-radius: 100px;
+  height: 55px;
+  width: 101px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signin-button:hover {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(
+      251.95deg,
+      rgba(156, 21, 190, 0.2) -0.37%,
+      rgba(0, 0, 0, 0) 139.41%
+    ),
+    linear-gradient(
+      61.69deg,
+      rgba(21, 190, 139, 0.2) 14.18%,
+      rgba(0, 0, 0, 0) 105.62%
+    ),
+    #1d1d1d;
+}
+
+.signin-button:focus {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    linear-gradient(
+      251.95deg,
+      rgba(156, 21, 190, 0.2) -0.37%,
+      rgba(0, 0, 0, 0) 139.41%
+    ),
+    linear-gradient(
+      61.69deg,
+      rgba(21, 190, 139, 0.2) 14.18%,
+      rgba(0, 0, 0, 0) 105.62%
+    ),
+    #1d1d1d;
+}
+
+@media screen and (max-width: 950px) {
+  .app__navbar-links {
+    display: none;
+  }
+  .app__navbar-smallscreen {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .app__navbar-smallscreen_links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    transition: 0.5s ease;
+    flex-direction: column;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: #1d1d1d;
+    border-bottom: #15be8b 1px solid;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 0 15px;
+  }
+  .app__navbar-smallscreen_links-item {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    text-transform: uppercase;
+    color: #ffffff;
+    position: relative;
+    margin: 20px 0;
+  }
+  .app__navbar-smallscreen_links span {
+    width: 100%;
+    height: 1px;
+    background: #15be8b;
+  }
+}

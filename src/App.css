@@ -1,0 +1,28 @@
+/* ГОТОВІ CSS СТИЛІ ЯКІ МОЖНА БУДЕ ЗАПИСАТИ В CLASSNAME
+
+ ДЛЯ БУДЬ-ЯКОГО БЛОКУ В БУДЬ-ЯКОМУ КОМПОНЕНТІ.
+
+ ТОБТО ЩОБ НЕ ПРОПИСУВАТИ ОДИНАКОВИЙ CSS ВСЮДИ, МИ ЙОГО
+
+ ПИШЕМО ТУТ І ВИКОРИСТОВУЄМО БУДЬ-ДЕ */
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+.foooter {
+  margin-top: auto;
+}
+

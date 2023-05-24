@@ -1,0 +1,163 @@
+.app__main {
+  overflow-x: hidden;
+}
+
+/* HEADER */
+
+.app__main-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+
+  background: radial-gradient(
+      circle at bottom right,
+      rgba(29, 29, 29, 0.2) 0%,
+      rgba(156, 21, 190, 0.138) 24.83%,
+      rgba(0, 0, 0, 0) 43.08%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(
+      circle at top left,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(21, 190, 139, 0.2) 23.7%,
+      rgba(0, 0, 0, 0) 43.08%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    #1d1d1d;
+}
+
+.app__main h1 {
+  font-family: var(--font-roboto);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 275px;
+  text-align: center;
+}
+
+.app__main h1 span {
+  background: linear-gradient(180deg, #19e4a7 0%, #05271d 88.02%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.app__main h3 {
+  font-family: var(--font-roboto);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.app__main h4 {
+  font-family: var(--font-roboto);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 130px;
+  text-align: center;
+}
+
+.app__main h4 span {
+  background: linear-gradient(180deg, #b015be 0%, #3e0743 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.app__main-searchbar {
+  margin-top: 35px;
+  margin-bottom: 180px;
+}
+/* ROADMAPS */
+.app__main-roadmaps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #2e2e2e;
+  padding: 0 15px;
+}
+
+.app__main-roadmaps_article {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.app__main-roadmaps_article span {
+  background: rgba(255, 255, 255, 0.3);
+  height: 1px;
+  max-width: 450px;
+  width: 100%;
+}
+
+.app__main-roadmaps_article p {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #15be8b;
+  white-space: nowrap;
+}
+
+.app__main-roadmaps_cards {
+  justify-content: center;
+  align-items: center;
+  grid-gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 400px));
+  max-width: 1672px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.load-more {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #15be8b;
+  cursor: pointer;
+  text-decoration: underline;
+  width: max-content;
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 100px;
+}
+
+.load-more:hover {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .app__main h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .app__main h3 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .app__main h4 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
